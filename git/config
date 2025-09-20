@@ -1,0 +1,9 @@
+[user]
+        name = Masahiro Nakamura
+        email = 13937915+tsuu32@users.noreply.github.com
+[push]
+        autoSetupRemote = true
+[pull]
+        rebase = false
+[init]
+        defaultBranch = main
