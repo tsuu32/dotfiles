@@ -25,8 +25,8 @@ mise:
 	ln -vsf "$(CURDIR)/mise/config.toml" "$(CONFIG_HOME)/mise/config.toml"
 
 zsh:
-	ln -vsf "$(CURDIR)/.zshrc" "$(HOME)/.zshrc"
-	ln -vsf "$(CURDIR)/.zprofile" "$(HOME)/.zprofile"
+	ln -vsf "$(CURDIR)/zsh/zshrc" "$(HOME)/.zshrc"
+	ln -vsf "$(CURDIR)/zsh/zprofile" "$(HOME)/.zprofile"
 
 ghostty:
 	@mkdir -p "$(CONFIG_HOME)/ghostty"
