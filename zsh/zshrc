@@ -1,1 +1,15 @@
+# zsh - compsys
+autoload -U compinit; compinit
+zstyle ':completion:*:default' menu true select
+
+# zsh - alias
+alias ls='ls -FG'
+
+# sheldon
+eval "$(sheldon source)"
+## sheldon - pure
+autoload -U promptinit; promptinit
+prompt pure
+
+# mise
 eval "$(/Users/tsuu32/.local/bin/mise activate zsh)"

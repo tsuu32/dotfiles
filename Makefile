@@ -1,11 +1,11 @@
 # Manage dotfile symlinks with explicit per-config targets.
 CONFIG_HOME ?= $(HOME)/.config
 
-.PHONY: all install bat git tmux mise zsh ghostty
+.PHONY: all install bat git tmux mise zsh ghostty sheldon
 
 all: install
 
-install: bat git tmux mise zsh ghostty
+install: bat git tmux mise zsh ghostty sheldon
 
 bat:
 	@mkdir -p "$(CONFIG_HOME)/bat"
@@ -31,3 +31,7 @@ zsh:
 ghostty:
 	@mkdir -p "$(CONFIG_HOME)/ghostty"
 	ln -vsf "$(CURDIR)/ghostty/config" "$(CONFIG_HOME)/ghostty/config"
+
+sheldon:
+	@mkdir -p "$(CONFIG_HOME)/sheldon"
+	ln -vsf "$(CURDIR)/sheldon/plugins.toml" "$(CONFIG_HOME)/sheldon/plugins.toml"
