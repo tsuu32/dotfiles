@@ -31,6 +31,7 @@ zsh:
 ghostty:
 	@mkdir -p "$(CONFIG_HOME)/ghostty"
 	ln -vsf "$(CURDIR)/ghostty/config" "$(CONFIG_HOME)/ghostty/config"
+	ln -vsf "$(CURDIR)/ghostty/themes" "$(CONFIG_HOME)/ghostty/themes"
 
 sheldon:
 	@mkdir -p "$(CONFIG_HOME)/sheldon"
