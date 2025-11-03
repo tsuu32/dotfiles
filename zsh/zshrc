@@ -28,3 +28,14 @@ fi
 if [ -x "$HOME/.local/bin/mise" ]; then
 	eval "$($HOME/.local/bin/mise activate zsh)"
 fi
+
+# Moddable SDK
+if [ -d "$HOME/work/Moddable-OpenSource/moddable" ]; then
+	export MODDABLE="$HOME/work/Moddable-OpenSource/moddable"
+	export PATH="${MODDABLE}/build/bin/mac/release:$PATH"
+fi
+
+# ESP-IDF
+if [ -d "$HOME/esp/esp-idf" ]; then
+	alias get_idf='. $HOME/esp/esp-idf/export.sh'
+fi
