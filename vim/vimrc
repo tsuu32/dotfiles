@@ -1,0 +1,10 @@
+" Color
+syntax enable
+set termguicolors
+colorscheme desert
+set cursorline
+
+" UI
+set number
+set laststatus=2
+set wildmenu
