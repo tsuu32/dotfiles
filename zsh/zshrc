@@ -39,3 +39,6 @@ fi
 if [ -d "$HOME/esp/esp-idf" ]; then
 	alias get_idf='. $HOME/esp/esp-idf/export.sh'
 fi
+
+# swiftly
+. "$HOME/.swiftly/env.sh"
